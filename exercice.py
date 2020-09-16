@@ -12,8 +12,8 @@ def remove_third_char(string: str) -> str:
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
     return string.replace(old_char, new_char)
-    #old_char_index = string.find(old_char)
-    #return string[:old_char_index] + new_char + string[old_char_index+1:]
+    # old_char_index = string.find(old_char)
+    # return string[:old_char_index] + new_char + string[old_char_index+1:]
 
 
 def get_nb_char(string: str, char: str) -> int:
@@ -25,7 +25,10 @@ def get_nb_char(string: str, char: str) -> int:
 
 
 def get_nb_words(sentence: str) -> int:
-    return 0
+    i, word = 0, sentence.split()
+    for x in word:
+        i += 1
+    return i
 
 
 def main() -> None:
