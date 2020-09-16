@@ -11,7 +11,7 @@ def remove_third_char(string: str) -> str:
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    return ""
+    return string.find("w"), string.replace("w", 'z')
 
 
 def get_nb_char(string: str, char: str) -> int:
