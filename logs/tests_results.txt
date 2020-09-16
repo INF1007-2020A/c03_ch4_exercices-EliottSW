@@ -1,7 +1,7 @@
 test_get_nb_char (__main__.TestExercice) ... FAIL
 test_get_nb_words (__main__.TestExercice) ... ERROR
 test_pair (__main__.TestExercice) ... ok
-test_remove_third_char (__main__.TestExercice) ... FAIL
+test_remove_third_char (__main__.TestExercice) ... ok
 test_replace_char (__main__.TestExercice) ... FAIL
 
 ======================================================================
@@ -34,25 +34,6 @@ First differing element 0:
  : Mauvais calcul du nombre d'occurences du caractère
 
 ======================================================================
-FAIL: test_remove_third_char (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 33, in test_remove_third_char
-    'Retrait du mauvais caractère'
-AssertionError: Lists differ: ['heyjad!', 'abcefg', '0124'] != ['he jad!', 'abdefg', '0134']
-
-First differing element 0:
-'heyjad!'
-'he jad!'
-
-- ['heyjad!', 'abcefg', '0124']
-?     ^          ^         ^
-
-+ ['he jad!', 'abdefg', '0134']
-?     ^          ^         ^
- : Retrait du mauvais caractère
-
-======================================================================
 FAIL: test_replace_char (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -70,4 +51,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
 
-FAILED (failures=3, errors=1)
+FAILED (failures=2, errors=1)
